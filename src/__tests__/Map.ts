@@ -1,6 +1,6 @@
 import MyMap from "@code/Map";
 
-test("Map", function() {
+test("Map", function () {
     const map = new MyMap<string, number>();
     map.set("foo", 55);
     expect(map.size()).toEqual(1);
@@ -16,10 +16,9 @@ test("Map", function() {
     expect(map.get("bar")).toEqual(69);
     expect(map.get("blaz")).toEqual(undefined);
 
-    map.delete("bar")
+    map.delete("bar");
     expect(map.size()).toEqual(3);
-    map.delete("barblabr")
+    map.delete("barblabr");
     expect(map.size()).toEqual(2);
     expect(map.get("bar")).toEqual(undefined);
 });
-

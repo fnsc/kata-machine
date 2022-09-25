@@ -1,6 +1,5 @@
-node_modules
 ./ligma.config.js
+.idea
 dist
+node_modules
 stats.json
-
-
